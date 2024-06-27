@@ -20,7 +20,7 @@ const Posts = ({post,userId}) => {
         try {
             e.preventDefault();
             if(!window.confirm("are you sure you want to delet")) return
-            const res = await fetch("http://localhost:5000/api/posts/"+post._id,{
+            const res = await fetch("https://threaddapp.onrender.com/api/posts/"+post._id,{
                 method:"DELETE",
                 headers:{
                     "Content-Type":"application/json",

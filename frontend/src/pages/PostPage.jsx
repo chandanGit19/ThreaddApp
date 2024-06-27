@@ -19,7 +19,7 @@ const PostPage = () => {
 
   const getUser = async()=>{
     try {
-    const res =  await fetch("http://localhost:5000/api/posts/"+pid,{
+    const res =  await fetch("https://threaddapp.onrender.com/api/posts/"+pid,{
       headers:{
         "Content-Type":"application/json",
         "authorisation":token

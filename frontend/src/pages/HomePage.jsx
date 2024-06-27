@@ -16,7 +16,7 @@ const HomePage = () => {
   useEffect(()=>{
     const getPosts = async() =>{
       try {
-        const res = await fetch("http://localhost:5000/api/posts/All/feed",{
+        const res = await fetch("https://threaddapp.onrender.com/api/posts/All/feed",{
           headers:{
             "Content-Type":"application/json",
             "authorisation":token,

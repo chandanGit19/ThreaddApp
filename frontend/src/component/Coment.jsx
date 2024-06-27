@@ -16,7 +16,7 @@ const Coment = ({reply}) => {
 
     const handleDeletPost = async()=>{
         try {
-            const res = await fetch("http://localhost:5000/api/posts/")
+            const res = await fetch("https://threaddapp.onrender.com/api/posts/")
         } catch (error) {
             
         }

@@ -43,7 +43,7 @@ import tokenAuth from '../atoms/tokenAtoms'
   const handelSignup = async()=>{
     console.log(input)
     try {
-        const res = await fetch("http://localhost:5000/api/users/signup",{
+        const res = await fetch("https://threaddapp.onrender.com/api/users/signup",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"

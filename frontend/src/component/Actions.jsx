@@ -30,7 +30,7 @@ const Actions = ({post}) => {
 		setLiking(true)
 
 		try {
-			const res = await fetch("http://localhost:5000/api/posts/like/"+post._id,{
+			const res = await fetch("https://threaddapp.onrender.com/api/posts/like/"+post._id,{
 				method:"POST",
 				headers:{
 					"Content-Type":"application/json",

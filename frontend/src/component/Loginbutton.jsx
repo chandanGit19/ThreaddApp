@@ -11,7 +11,7 @@ const Loginbutton = () => {
     const handleLogout = async()=>{
         try {
            
-            const res = await fetch("http://localhost:5000/api/users/logout",{
+            const res = await fetch("https://threaddapp.onrender.com/api/users/logout",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json",

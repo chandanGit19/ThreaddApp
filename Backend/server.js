@@ -20,7 +20,7 @@ app.use(express.urlencoded({extended:true,parameterLimit:100000,limit:'30mb'}));
 app.use(cookieParser());//it allows us to parse the cokies from req body and header 
 
 const coresOptions ={
-    origin:"*",
+    origin:"http://localhost:3000",
     credentials:true,
 };
 app.use(cors(coresOptions))

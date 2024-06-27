@@ -22,8 +22,8 @@ app.use(cookieParser());//it allows us to parse the cokies from req body and hea
 const coresOptions ={
     origin:"*",
     credentials:true,
-},
-app.use(cors(coreOptions))
+};
+app.use(cors(coresOptions))
 connectCloudinary();
 
 app.use("/api/users",userRoutes)

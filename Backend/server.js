@@ -19,10 +19,10 @@ app.use(express.json({
 app.use(express.urlencoded({extended:true,parameterLimit:100000,limit:'30mb'}));//to parse the form data in then req.body extend true means theat nested form data also get parse
 app.use(cookieParser());//it allows us to parse the cokies from req body and header 
 
-const coresOptions ={
-    origin:true,
-    credentials:true,
-};
+// const coresOptions ={
+//     origin:true,
+//     credentials:true,
+// },
 app.use(cors(coresOptions))
 connectCloudinary();
 
